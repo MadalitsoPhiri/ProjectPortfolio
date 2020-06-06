@@ -1,0 +1,327 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif,Arial;
+    position: relative;
+    top:0px;
+    left:0px;
+    right:0px;
+    width:100vw;
+    height:100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-yellow:rgb(230, 140, 24);
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+
+#navbar{
+display: flex ;
+justify-content:space-between;
+align-items: center;
+position:fixed;
+top:0px;
+left:0px;
+right: 0px;
+height:5%;
+background:var(--main-yellow);
+width:100%;
+z-index:1;
+box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+-webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+-moz-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
+nav div{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    color:var(--main-white);
+    width:30%;
+    min-width:300px;
+    height: 100%;
+    margin-left: 10px;
+    padding-right: 7%;
+
+}
+nav a:hover{
+ background-color:var(--main-blue);
+ color:var(--main-white)
+}
+nav a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--main-gray);
+    height: 100%;
+    padding-left:5%;
+    padding-right:5%;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    font-weight: 400;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:auto;
+  
+}
+#welcome{
+    height:900px;
+    width:100%;
+    color:var(--main-white);
+    background-image:linear-gradient(90deg,rgba(82, 76, 76,0.8),rgb(54, 52, 52,0.7)),url(images/code-coder-codes-coding.jpg);
+    background-size:cover;
+    background-position: center;
+    padding:10% 0;
+ 
+
+}
+#welcome-h1{
+font-family:'Raleway',sans-serif;
+font-size:4rem;
+text-align: center;
+text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
+
+
+}
+#projects{
+background-color: var(--main-blue);
+height:900px;
+}
+#Contact{
+    background-color: var(--main-gray);
+    height:900px;
+}
+#welcome_paragraph{
+color:var(--main-yellow);
+text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
+}
+.large{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    
+
+}
+#about{
+    background:linear-gradient(0deg,rgb(201, 196, 196),rgb(156, 153, 153)) ;
+    justify-content:start;
+    padding:5% 0;
+    text-align: center;
+    height:900px;
+}
+#about p,li{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+li{
+    list-style: none;
+}
+#logo{
+margin-left: 2%;
+color:var(--main-gray)
+}
+#cover_photo{
+    width:250px;
+    min-width:300px;
+    height:300px;
+    background-image: url(images/IMG_20200102_105911_1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    border:7px solid var(--main-yellow);
+    padding:3px;
+    box-shadow:0px 0.5px 8px 3px rgba(0, 0, 0, 0.7);
+    margin:4%;
+
+}
+#cover_photo:hover{
+    background-image: linear-gradient(90deg,rgba(99, 96, 96, 0.4),rgba(99, 96, 96, 0.4)),url(images/IMG_20200102_105911_1.jpg);
+    cursor:pointer;
+}
+main{
+    position: relative;
+    top:4%;
+}
+@media(max-width:699px){
+
+    #navbar{
+        display: flex ;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position:fixed;
+        top:0px;
+        left:0px;
+        right: 0px;
+        height:10%;
+        background:var(--main-yellow);
+        width:100vw;
+        z-index:1;
+        box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+        }
+        main{
+            position: relative;
+            top:9%;
+            width: 100%;
+            height: 100%;
+        }
+        #welcome{
+            height:700px;
+            width:100vw;
+            color:var(--main-white);
+            background-image:linear-gradient(90deg,rgba(82, 76, 76,0.8),rgb(54, 52, 52,0.7)),url(images/code-coder-codes-coding.jpg);
+            background-size:cover;
+            background-position: center;
+            padding:10% 0;
+         
+        
+        }
+        #welcome-h1{
+            font-family:'Raleway',sans-serif;
+            font-size:3.5rem;
+            text-align: center;
+            text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
+            
+            
+            }
+            .large{
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-align: center;
+                
+            
+            }
+
+            #about p,li{
+                font-size: 0.75rem;
+                margin-bottom: 2%;
+            }
+            h2{
+                font-size:1rem;
+            }
+            nav div{
+              width:100vw;
+             
+          }
+          #about{
+              padding-left:10%;
+              padding-right: 10%;
+          }
+
+}
+@media (max-width:350px) and (max-height:600px){
+
+nav div{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    color:var(--main-white);
+    width:30%;
+    min-width:250px;
+    height: 100%;
+}
+#welcome{
+    height:700px;
+    width:100vw;
+    color:var(--main-white);
+    background-image:linear-gradient(90deg,rgba(82, 76, 76,0.8),rgb(54, 52, 52,0.7)),url(images/code-coder-codes-coding.jpg);
+    background-size:cover;
+    background-position: center;
+ 
+
+}
+#cover_photo{
+    width:200px;
+    min-width:250px;
+    height:250px;
+    background-image: url(images/IMG_20200102_105911_1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    border:7px solid var(--main-yellow);
+    padding:3px;
+    box-shadow:0px 0.5px 8px 3px rgba(0, 0, 0, 0.7);
+    margin:4%;
+
+}
+#welcome-h1{
+    font-family:'Raleway',sans-serif;
+    font-size:1.5rem;
+    text-align: center;
+    text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
+    
+    
+    }
+    .large{
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+        
+    
+    }
+}
+@media (max-width:400px) and(min-height:800px){
+    #welcome{
+        height:100vh;
+        width:100vw;
+        color:var(--main-white);
+        background-image:linear-gradient(90deg,rgba(82, 76, 76,0.8),rgb(54, 52, 52,0.7)),url(images/code-coder-codes-coding.jpg);
+        background-size:cover;
+        background-position: center;
+    } 
+        main{
+            position: relative;
+            top:9%;
+            width: 100%;
+            height: 100%;
+        }
+    
+    #about{
+        height:100vh;
+    }
+    #projects{
+        height: 800px;
+    }
+    #contact{
+        height:800px;
+    }
+    #navbar{
+        display: flex ;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        position:fixed;
+        top:0px;
+        left:0px;
+        right: 0px;
+        height:10%;
+        background:var(--main-yellow);
+        width:100vw;
+        z-index:1;
+        box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+        }
+}
