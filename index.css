@@ -21,6 +21,7 @@ body{
     --main-yellow:rgb(230, 140, 24);
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-silver:rgb(161, 156, 156);
 }
 
 
@@ -36,7 +37,7 @@ height:5%;
 background:var(--main-yellow);
 width:100%;
 z-index:1;
-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+box-shadow:0px 4px 8px 1px rgba(0, 0, 0, 0.6);
 -webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
 -moz-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
 }
@@ -192,6 +193,38 @@ text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px ;
+    box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
+}
+#Todoapp{
+    background-image: url(images/Screenshot\ from\ 2020-06-10\ 00-06-12.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    min-width: 280px ;
+    min-height: 380px;
+    background-color: var(--main-yellow);
+    position:relative;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px ;
+}
+#surveyform{
+    background-image: url(images/Screenshot\ from\ 2020-06-10\ 00-07-04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    min-width: 280px ;
+    min-height: 380px;
+    background-color: var(--main-yellow);
+    position:relative;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px ;
 }
 .project-tile{
     display:flex;
@@ -204,7 +237,19 @@ text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
     background-color: var(--main-gray);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px ;
+    box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.6);
+-webkit-box-shadow:0px 0.5px 8px 1px rgba(0, 0, 0, 0.4);
 }
+.project-tile a{
+    text-decoration: none;
+    color:var(--main-white);
+}
+.project-tile a span{
+    visibility: hidden;
+    font-size:1.5rem;
+    color:var(--main-yellow);
+}
+
 .large{
     font-weight: bold;
     font-size: 3rem;
@@ -217,7 +262,7 @@ text-shadow:1px 8px 3px rgba(0, 0, 0, 0.7);
     justify-content:start;
     padding:5% 0;
     text-align: center;
-    height:900px;
+    height:auto;
 }
 #about p,li{
     font-size: 1.5rem;
@@ -245,7 +290,6 @@ color:var(--main-gray)
 
 }
 #cover_photo:hover{
-    background-image: linear-gradient(90deg,rgba(99, 96, 96, 0.4),rgba(99, 96, 96, 0.4)),url(images/IMG_20200102_105911_1.jpg);
     cursor:pointer;
 }
 main{
@@ -428,10 +472,10 @@ nav div{
         }
     
     #about{
-        height:100vh;
+        height:auto;
     }
     #projects{
-        height: 800px;
+        height:auto;
     }
     #contact{
         height:800px;
